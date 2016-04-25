@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="shop" lang="en-utf8">
+  <head>
+    <meta charset="utf-8">
+    <title>Little Shop of Horrors</title>
+  </head>
+
+  <body>
+
+    <main>
+      <header ng-controller= "WelcomeController as welcome">
+        <h1>{{welcome.title}}</h1>
+        <nav>
+          <ul>
+            <li><a ui-sref='home'>Home</a></li>
+            <li><a ui-sref='categories'>Categories</a></li>
+            <li><a ui-sref='cart'>Shopping Cart</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class='page-content' ui-view></section>
+      </main>
+
+      <footer>&copy 2016 Mushnik's Flower Shop All Rights Reserved</footer>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js'></script>
+    <script src='http://angular-ui.github.io/ui-router/release/angular-ui-router.js'></script>
+    <script src='shared/shop.module.js'></script>
+    <script src='welcome/welcome.controller.js'></script>
+    <script src='cetegories/categories.controller.js'></script>
+  </body>
+
+</html>
