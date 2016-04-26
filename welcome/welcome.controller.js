@@ -13,8 +13,8 @@
     this.flowerOfWeek = "Audrey II";
 
     this.search = function search (){
-      console.log("inside search go to cart");
-      $state.go('cart');
+      console.log("inside search");
+      $state.go('itemDetail');
     };
   }
 

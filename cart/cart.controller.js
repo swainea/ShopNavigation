@@ -5,9 +5,5 @@
     .module('shop')
     .controller('CartController', CartController);
 
-  function CartController (){
-
-
-  }
 
 }());
